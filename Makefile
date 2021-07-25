@@ -22,5 +22,5 @@ clean:
 purge: clean
 	$(RM) $(OUTPUT)
 
-run: 
-	likwid-perfctr -C 3 -g FLOPS_DP -m "./$(OUTPUT) -n 1024"
+run: ./run_it.sh
+	./run_it.sh
